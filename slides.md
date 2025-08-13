@@ -1,64 +1,80 @@
 ---
 marp: true
-theme: product-docs
+theme: custom
 paginate: true
-math: katex
-footer: '© 2025 AcmeSoft · Page $current / $total'
-title: "Product Documentation with Marp"
-author: "Technical Writing Team"
+math: true
+size: 16:9
 ---
 
 <style>
-/* @theme product-docs */
 :root {
-  --accent: #3b82f6;
-  --accent-2: #0ea5e9;
-  --ink: #0f172a;
-  --muted: #475569;
-  --bg: #ffffff;
-  --code-bg: #0b1020;
-  --code-fg: #e2e8f0;
+  --header-bg: #0b3d91;
+  --accent: #00a3ff;
+  --text: #f7f9fb;
+  --muted: #bcd2ff;
 }
-section { font-family: sans-serif; padding: 56px; }
-section h1 { color: var(--accent); }
-section pre code { background: var(--code-bg); color: var(--code-fg); padding: 10px; border-radius: 6px; }
+section {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+section.title {
+  background: linear-gradient(135deg, var(--header-bg), #072b5b);
+  color: var(--text);
+}
+.box {
+  display: inline-block;
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.04);
+  color: var(--muted);
+  font-size: 0.9em;
+}
+pre,
+code {
+  background: rgba(0,0,0,0.5);
+  border-radius: 6px;
+  padding: 0.35rem;
+}
+footer {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.6rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.75);
+}
 </style>
 
-# Product Documentation (Marp)
-Email: **23f3002689@ds.study.iitm.ac.in**
+---
+<!-- class: title -->
+# Product Documentation — **AwesomeApp**
+
+> Maintainable docs for engineers, product, and QA
+
+<div class="box">Version control + Marp</div>
+
+<footer>Contact: 23f3002689@ds.study.iitm.ac.in</footer>
 
 ---
 
-## Why Marp?
-- Version controlled in GitHub
-- Custom themes
-- Export to PDF/HTML/PPTX
+## What is Marp?
+
+Marp (Markdown Presentation) is a powerful tool to create presentations using Markdown. It supports:
+
+- Technical presentations
+- Documentation slides
+- Academic and conference talks
+- Teaching materials
+- Hosting via GitHub Pages
 
 ---
 
-<!--
-_backgroundImage: url('bg-hero.jpeg')
-_backgroundSize: cover
-_backgroundPosition: center
-_color: #ffffff
--->
+## Installation
 
-# 📊 Architecture Overview
-Our platform is designed with:
-- Microservices diagram
-- Data flow
-- APIs
+```bash
+# Install Marp CLI globally
+npm install -g @marp-team/marp-cli
 
----
+# One-time use without install
+npx @marp-team/marp-cli@latest
 
-## Algorithmic Complexity
-Example:
-\[
-T(n) = O(n \log n)
-\]
-
----
-
-## Contact
-- Docs Owner: Technical Writing Team
-- Email: **23f3002689@ds.study.iitm.ac.in**
+# Local project install
+npm install --save-dev @marp-team/marp-cli
