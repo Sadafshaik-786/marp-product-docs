@@ -57,24 +57,35 @@ footer {
 
 ## What is Marp?
 
-Marp (Markdown Presentation) is a powerful tool to create presentations using Markdown. It supports:
-
-- Technical presentations
-- Documentation slides
-- Academic and conference talks
-- Teaching materials
-- Hosting via GitHub Pages
+- Version controlled in GitHub  
+- Custom themes  
+- Export to PDF/HTML/PPTX  
 
 ---
 
-## Installation
+<!--
+_backgroundImage: url('https://raw.githubusercontent.com/Sadafshaik-786/marp-product-docs/main/bg-hero.jpeg')
+_backgroundSize: cover
+_backgroundPosition: center
+_color: #ffffff
+-->
 
-```bash
-# Install Marp CLI globally
-npm install -g @marp-team/marp-cli
+# 📊 Architecture Overview
+Our platform is designed with:
+- Microservices diagram
+- Data flow
+- APIs
 
-# One-time use without install
-npx @marp-team/marp-cli@latest
+---
 
-# Local project install
-npm install --save-dev @marp-team/marp-cli
+## Algorithmic complexity example
+
+$$
+T(n) = O(n \log n)
+$$
+
+---
+
+## Contact
+
+- Email: **23f3002689@ds.study.iitm.ac.in**
