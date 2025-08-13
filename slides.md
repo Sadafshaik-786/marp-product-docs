@@ -43,7 +43,8 @@ _backgroundPosition: center
 _color: #ffffff
 -->
 
-# Architecture Overview
+# 📊 Architecture Overview
+Our platform is designed with:
 - Microservices diagram
 - Data flow
 - APIs
