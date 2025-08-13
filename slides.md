@@ -57,35 +57,100 @@ footer {
 
 ## What is Marp?
 
-- Version controlled in GitHub  
-- Custom themes  
-- Export to PDF/HTML/PPTX  
+Marp (Markdown Presentation) is a powerful tool to create presentations using Markdown. It supports:
+
+- Technical presentations
+- Documentation slides
+- Academic and conference talks
+- Teaching materials
+- Hosting via GitHub Pages
 
 ---
 
-<!--
-_backgroundImage: url('https://raw.githubusercontent.com/Sadafshaik-786/marp-product-docs/main/bg-hero.jpeg')
-_backgroundSize: cover
-_backgroundPosition: center
-_color: #ffffff
--->
+## Installation
 
-# 📊 Architecture Overview
-Our platform is designed with:
-- Microservices diagram
-- Data flow
-- APIs
+```bash
+# Install Marp CLI globally
+npm install -g @marp-team/marp-cli
+
+# One-time use without install
+npx @marp-team/marp-cli@latest
+
+# Local project install
+npm install --save-dev @marp-team/marp-cli
+```
+
+---
+<!-- _backgroundImage: url('./bg.jpeg') -->
+<!-- _backgroundSize: cover -->
+<!-- _backgroundPosition: center -->
+![bg](./bg.jpeg)
+![bg fit](./bg.jpeg)
+![bg cover](./bg.jpeg)
+
+# Our product at a glance
+
+> Streamlined pipelines, robust observability, and tiny deploys.
+
+---
+
+## Architecture (high level)
+
+- Microservices: API, Worker, Auth, Metrics
+- Data store: Postgres + Redis cache
+- CI/CD: GitHub Actions -> Staging -> Production
 
 ---
 
 ## Algorithmic complexity example
 
+Average-case deduplication complexity:
+
 $$
-T(n) = O(n \log n)
+T(n) = O(n) \\ \text{(hashing + lookup)}
+$$
+
+Sorting then deduplication:
+
+$$
+T(n) = O(n \\log n)
 $$
 
 ---
 
-## Contact
+## Pipeline latency estimation
+
+Given $W$ workers and average service time:
+
+$$
+\\text{throughput} = \\frac{W}{\\text{avg\\_service\\_time}}
+$$
+
+For $M$ messages of size $s$, total work:
+
+$$
+O(Ms)
+$$
+
+---
+
+## Best Practices
+
+- Keep slides focused and minimal
+- Use consistent styling
+- Test output formats
+- Optimize images before including
+
+---
+
+## Contact & Resources
 
 - Email: **23f3002689@ds.study.iitm.ac.in**
+- Repo contains `slides.md` and `bg.jpeg`
+
+---
+
+# Thank you!
+
+Questions? Ping: **23f3002689@ds.study.iitm.ac.in**
+
