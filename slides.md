@@ -37,9 +37,10 @@ Email: **23f3002689@ds.study.iitm.ac.in**
 ---
 
 <!--
-_backgroundImage: url('assets/bg-hero.jpg')
+_backgroundImage: url('bg-hero.jpeg')
 _backgroundSize: cover
-_color: #fff
+_backgroundPosition: center
+_color: #ffffff
 -->
 
 # Architecture Overview
